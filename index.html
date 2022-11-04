@@ -14,37 +14,37 @@
 	</head>
 	<body>
 		<div class="card">
-			<div class="card__image"></div>
+			<div class="card__image">
+				<picture>
+					<source media="(min-width:768px)" srcset="./images/image-product-desktop.jpg" />
+					<img
+						sizes="cover"
+						src="./images/image-product-mobile.jpg"
+						alt="imagen del producto" />
+				</picture>
+			</div>
 			<div class="card__meta">
-				<span tabindex="1" aria-label="categoría del producto" class="card__categori"
-					>Perfume</span
-				>
-				<h1 tabindex="2" aria-label="nombre del producto" class="card__title">
+				<span aria-label="categoría del producto" class="card__categori">Perfume</span>
+				<h1 aria-label="nombre del producto" class="card__title">
 					Gabrielle Essence Eau De Parfum
 				</h1>
-				<p aria-label="descripción del producto" tabindex="3" class="card__description">
+				<p aria-label="descripción del producto" class="card__description">
 					A floral, solar and voluptuous interpretation composed by Olivier Polge,
 					Perfumer-Creator for the House of CHANEL.
 				</p>
 				<div class="card__price">
-					<span aria-label="precio en descuento" tabindex="4" class="card__price--primary"
+					<span aria-label="precio en descuento" class="card__price--primary"
 						>$149.99</span
 					>
-					<span aria-label="precio original" tabindex="5" class="card__price--secondary">
+					<span aria-label="precio original" class="card__price--secondary">
 						$169.99</span
 					>
 				</div>
-				<button aria-label="botton para agregar al carro" tabindex="6" class="card__btn">
+				<button aria-label="botton para agregar al carro" class="card__btn">
 					<img src="/images/icon-cart.svg" alt="imagen de carrito" />
 					Add to Cart
 				</button>
 			</div>
 		</div>
-		<!-- <div class="attribution">
-			Challenge by
-			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-				>Frontend Mentor</a
-			>. Coded by <a href="#">Your Name Here</a>.
-		</div> -->
 	</body>
 </html>
